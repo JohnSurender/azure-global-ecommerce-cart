@@ -1,0 +1,23 @@
+flowchart TB
+
+    subgraph RG["Resource Group"]
+        
+        subgraph ACR["Azure Container Registry"]
+            Repo["Container Image Repository"]
+        end
+
+        subgraph ACA["Azure Container Apps Environment"]
+            App["Container App"]
+            Logs["Log Analytics Workspace"]
+        end
+
+        subgraph VNet["Virtual Network (Optional)"]
+            Subnet["Container Apps Subnet"]
+        end
+
+    end
+
+    %% Connections
+    Repo --> App
+    App --> Logs
+    ACA --> VNet
