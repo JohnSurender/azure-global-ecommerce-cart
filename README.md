@@ -1,4 +1,5 @@
-📘 Azure Container Apps Deployment with ACR & Bicep (Project 4)
+📘 Azure Container Apps Deployment with ACR & Bicep 
+
 This project demonstrates a modern, cloud‑native container deployment using:
 
 Azure Container Apps
